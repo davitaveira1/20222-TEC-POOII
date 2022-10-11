@@ -30,17 +30,17 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="ladoC" max="32767" attributes="0"/>
+                      <Component id="campo_ladoC" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="ladoB" max="32767" attributes="0"/>
+                      <Component id="campo_ladoB" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="ladoA" min="-2" pref="380" max="-2" attributes="0"/>
+                      <Component id="campo_ladoA" min="-2" pref="380" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="122" max="32767" attributes="0"/>
@@ -59,17 +59,17 @@
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ladoA" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="campo_ladoA" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ladoB" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="campo_ladoB" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ladoC" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="campo_ladoC" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="45" max="32767" attributes="0"/>
@@ -133,16 +133,19 @@
         <Property name="text" type="java.lang.String" value="Lado C:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="ladoA">
+    <Component class="javax.swing.JTextField" name="campo_ladoA">
     </Component>
-    <Component class="javax.swing.JTextField" name="ladoC">
+    <Component class="javax.swing.JTextField" name="campo_ladoC">
     </Component>
-    <Component class="javax.swing.JTextField" name="ladoB">
+    <Component class="javax.swing.JTextField" name="campo_ladoB">
     </Component>
     <Component class="javax.swing.JButton" name="btAnalise">
       <Properties>
         <Property name="text" type="java.lang.String" value="An&#xe1;lise"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAnaliseActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

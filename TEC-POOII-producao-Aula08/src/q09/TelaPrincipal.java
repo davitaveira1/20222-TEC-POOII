@@ -36,7 +36,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         btStrogonoff = new javax.swing.JButton();
         btBife = new javax.swing.JButton();
         btPao = new javax.swing.JButton();
-        btFecharConta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,18 +73,36 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanel2.add(btPicanha);
 
         btLasanha.setText("Lasanha");
+        btLasanha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btLasanhaActionPerformed(evt);
+            }
+        });
         jPanel2.add(btLasanha);
 
         btStrogonoff.setText("Strogonoff");
+        btStrogonoff.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btStrogonoffActionPerformed(evt);
+            }
+        });
         jPanel2.add(btStrogonoff);
 
         btBife.setText("Bife Acebolado");
+        btBife.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btBifeActionPerformed(evt);
+            }
+        });
         jPanel2.add(btBife);
 
         btPao.setText("Pão com ovo");
+        btPao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPaoActionPerformed(evt);
+            }
+        });
         jPanel2.add(btPao);
-
-        btFecharConta.setText("Fechar conta");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -94,9 +111,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(113, 113, 113)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btFecharConta, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(139, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -106,9 +121,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(46, 46, 46)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63)
-                .addComponent(btFecharConta, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
 
         pack();
@@ -121,9 +134,47 @@ public class TelaPrincipal extends javax.swing.JFrame {
         //prato = R$ 25
         int confirma = JOptionPane.showConfirmDialog(null, "Deseja pagar os 10% ?","Atenção!", JOptionPane.YES_NO_OPTION);
         if (confirma == JOptionPane.YES_OPTION) {
-            
+            double contaFinal = 25*1.1;
+            JOptionPane.showMessageDialog(null,"Valor final da conta: "+contaFinal);
         }
     }//GEN-LAST:event_btPicanhaActionPerformed
+
+    private void btLasanhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLasanhaActionPerformed
+        //prato = R$ 20
+        int confirma = JOptionPane.showConfirmDialog(null, "Deseja pagar os 10% ?","Atenção!", JOptionPane.YES_NO_OPTION);
+        if (confirma == JOptionPane.YES_OPTION) {
+            double contaFinal = 20*1.1;
+            JOptionPane.showMessageDialog(null,"Valor final da conta: "+contaFinal);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_btLasanhaActionPerformed
+
+    private void btStrogonoffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btStrogonoffActionPerformed
+        // TODO add your handling code here:
+        //prato = R$ 18
+        int confirma = JOptionPane.showConfirmDialog(null, "Deseja pagar os 10% ?","Atenção!", JOptionPane.YES_NO_OPTION);
+        if (confirma == JOptionPane.YES_OPTION) {
+            double contaFinal = 18*1.1;
+            JOptionPane.showMessageDialog(null,"Valor final da conta: "+contaFinal);
+        }        
+    }//GEN-LAST:event_btStrogonoffActionPerformed
+
+    private void btBifeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBifeActionPerformed
+        //prato = R$ 18
+        int confirma = JOptionPane.showConfirmDialog(null, "Deseja pagar os 10% ?","Atenção!", JOptionPane.YES_NO_OPTION);
+        if (confirma == JOptionPane.YES_OPTION) {
+            double contaFinal = 18*1.1;
+            JOptionPane.showMessageDialog(null,"Valor final da conta: "+contaFinal);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_btBifeActionPerformed
+
+    private void btPaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPaoActionPerformed
+        //prato = R$ 5
+        int confirma = JOptionPane.showConfirmDialog(null, "Deseja pagar os 10% ?","Atenção!", JOptionPane.YES_NO_OPTION);
+        if (confirma == JOptionPane.YES_OPTION) {
+            double contaFinal = 5*1.1;
+            JOptionPane.showMessageDialog(null,"Valor final da conta: "+contaFinal);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_btPaoActionPerformed
 
     /**
          * @param args the command line arguments
@@ -162,7 +213,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btBife;
-    private javax.swing.JButton btFecharConta;
     private javax.swing.JButton btLasanha;
     private javax.swing.JButton btPao;
     private javax.swing.JButton btPicanha;

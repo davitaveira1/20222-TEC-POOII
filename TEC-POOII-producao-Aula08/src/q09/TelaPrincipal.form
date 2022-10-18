@@ -26,10 +26,7 @@
           <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btFecharConta" min="-2" pref="490" max="-2" attributes="0"/>
-                  <Component id="jPanel2" min="-2" pref="490" max="-2" attributes="0"/>
-              </Group>
+              <Component id="jPanel2" min="-2" pref="490" max="-2" attributes="0"/>
               <EmptySpace pref="139" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -41,9 +38,7 @@
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
               <Component id="jPanel2" min="-2" pref="204" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-              <Component id="btFecharConta" min="-2" pref="49" max="-2" attributes="0"/>
-              <EmptySpace pref="87" max="32767" attributes="0"/>
+              <EmptySpace pref="105" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -112,28 +107,35 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Lasanha"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btLasanhaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btStrogonoff">
           <Properties>
             <Property name="text" type="java.lang.String" value="Strogonoff"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btStrogonoffActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btBife">
           <Properties>
             <Property name="text" type="java.lang.String" value="Bife Acebolado"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btBifeActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btPao">
           <Properties>
             <Property name="text" type="java.lang.String" value="P&#xe3;o com ovo"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btPaoActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="btFecharConta">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Fechar conta"/>
-      </Properties>
-    </Component>
   </SubComponents>
 </Form>

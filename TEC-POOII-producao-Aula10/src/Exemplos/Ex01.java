@@ -16,11 +16,16 @@ public class Ex01 {
     Connection conn=null;
     Statement st=null;
     
+    
     void inserir(){
         
         try {
             conn = db.conexao.getConnection();
             st = conn.createStatement();
+            st.executeUpdate("insert into "
+                    + "alunos (nome) "
+                    + "values ('Ricardo')");
+            
             
             
         } catch (Exception e) {

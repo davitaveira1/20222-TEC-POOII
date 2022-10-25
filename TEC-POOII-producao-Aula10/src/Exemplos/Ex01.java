@@ -5,7 +5,9 @@
 package Exemplos;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.Statement;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,6 +17,7 @@ public class Ex01 {
     
     Connection conn=null;
     Statement st=null;
+    PreparedStatement pst=null;
     
     
     void inserir(){
@@ -24,13 +27,32 @@ public class Ex01 {
             st = conn.createStatement();
             st.executeUpdate("insert into "
                     + "alunos (nome) "
-                    + "values ('Ricardo')");
+                    + "values ('Ricardo')");           
             
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null,"Erro: "+ e);
+        }
+        
+    }
+    
+    void inserir(String nome){
+        
+        try {
             
+            conn = db.conexao.getConnection();
+            pst = conn.prepareStatement("insert into alunos"
+                    + " (nome) values (?)");             
+            pst.setString(1, nome);
+            pst.executeUpdate();
             
         } catch (Exception e) {
         }
         
+    }
+    
+    public static void main(String[] args) {
+        Ex01 e = new Ex01();        
+        e.inserir("Joaquina");
     }
     
 }

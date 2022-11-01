@@ -26,8 +26,8 @@ public class Ex01 {
             conn = db.conexao.getConnection();
             st = conn.createStatement();
             st.executeUpdate("insert into "
-                    + "alunos (nome) "
-                    + "values ('Ricardo')");           
+                    + " alunos (nome) "
+                    + " values ('Reginaldo')");
             
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null,"Erro: "+ e);
@@ -52,7 +52,7 @@ public class Ex01 {
     
     public static void main(String[] args) {
         Ex01 e = new Ex01();        
-        e.inserir("Joaquina");
+        e.inserir();
     }
     
 }

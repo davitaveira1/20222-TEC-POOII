@@ -35,7 +35,8 @@ public class Ex02 {
     }
     //método dinâmico
     public void alterar(String nome,int codigo){
-        
+        conn = db.conexao.getConnection();
+        //pst = conn.pre
     }
     
     public static void main(String[] args) {

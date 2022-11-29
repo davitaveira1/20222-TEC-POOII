@@ -26,7 +26,7 @@ public class Ex02 {
 
             conn = db.conexao.getConnection();
             st = conn.createStatement();
-            st.executeUpdate("update alunos set"
+            st.executeUpdate("update produtos2 set"
                     + " nome='Davi Taveira Alencar'"
                     + " where codigo=1");
 
@@ -41,7 +41,7 @@ public class Ex02 {
         conn = db.conexao.getConnection();
         try {
             pst = conn.prepareStatement("update"
-                    + " alunos set nome=?"
+                    + " produtos2 set nome=?"
                     + " where codigo=?");
             
             pst.setString(1, nome);

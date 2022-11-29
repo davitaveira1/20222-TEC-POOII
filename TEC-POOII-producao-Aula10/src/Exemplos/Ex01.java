@@ -35,12 +35,12 @@ public class Ex01 {
         
     }
     
-    void inserir(String nome){
+    public void inserir(String nome){
         
         try {
             
             conn = db.conexao.getConnection();
-            pst = conn.prepareStatement("insert into alunos"
+            pst = conn.prepareStatement("insert into produtos2"
                     + " (nome) values (?)");             
             pst.setString(1, nome);
             pst.executeUpdate();
